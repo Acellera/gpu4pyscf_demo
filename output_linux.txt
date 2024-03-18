@@ -1,0 +1,113 @@
+
+
+******** <class 'gpu4pyscf.df.df_jk.DFRKS'> ********
+method = DFRKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'gpu4pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = False
+chkfile to save SCF result = /tmp/tmpqg332t8x
+max_memory 4000 MB (current use 1660 MB)
+XC library pyscf.dft.libxc version 6.2.2
+    unable to decode the reference due to https://github.com/NVIDIA/cuda-python/issues/29
+XC functionals = wB97m-V
+    N. Mardirossian and M. Head-Gordon.,  J. Chem. Phys. 144, 214110 (2016)
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x7fa53e38d300>
+grids dens level: 3
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x7fa53e38e2a0>
+** Following is NLC and NLC Grids **
+NLC functional = wB97m-V
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x7fa53e38d300>
+grids dens level: 3
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x7fa53e38e2a0>
+small_rho_cutoff = 1e-07
+Set gradient conv threshold to 3.16228e-05
+Initial guess from minao.
+Default auxbasis def2-tzvpp-jkfit is used for H def2-tzvppd
+Default auxbasis def2-tzvpp-jkfit is used for O def2-tzvppd
+Default auxbasis def2-tzvpp-jkfit is used for C def2-tzvppd
+tot grids = 249216
+tot grids = 249216
+init E= -693.629797225293
+cycle= 1 E= -684.4898614689  delta_E= 9.14  |ddm|= 5.58
+cycle= 2 E= -684.433683207415  delta_E= 0.0562  |ddm|= 4.04
+cycle= 3 E= -684.78582167596  delta_E= -0.352  |ddm|= 1.75
+cycle= 4 E= -684.797422208556  delta_E= -0.0116  |ddm|= 0.508
+cycle= 5 E= -684.802482150895  delta_E= -0.00506  |ddm|= 0.191
+cycle= 6 E= -684.80286723896  delta_E= -0.000385  |ddm|= 0.0637
+cycle= 7 E= -684.802881126893  delta_E= -1.39e-05  |ddm|= 0.0194
+cycle= 8 E= -684.802885696685  delta_E= -4.57e-06  |ddm|= 0.0107
+cycle= 9 E= -684.802886140581  delta_E= -4.44e-07  |ddm|= 0.00317
+cycle= 10 E= -684.802886224089  delta_E= -8.35e-08  |ddm|= 0.00166
+cycle= 11 E= -684.802886233862  delta_E= -9.77e-09  |ddm|= 0.000612
+cycle= 12 E= -684.80288623615  delta_E= -2.29e-09  |ddm|= 0.000375
+cycle= 13 E= -684.802886236338  delta_E= -1.87e-10  |ddm|= 7.77e-05
+converged SCF energy = -684.802886236338
+total energy = -684.8028862363378
+
+
+******** <class 'gpu4pyscf.df.grad.rks.Gradients'> for <class 'gpu4pyscf.df.df_jk.DFRKS'> ********
+unit = Eh/Bohr
+max_memory 20000 MB (current use 2273 MB)
+grid_response = False
+--------------- DFRKS gradients ---------------
+         x                y                z
+0 C     0.0163909060    -0.0113589531     0.0396907464
+1 O     0.0095763795    -0.0339111214    -0.0504400959
+2 C    -0.0725972873    -0.0222313493    -0.0265012383
+3 C     0.0006573155    -0.0214878414     0.0006480047
+4 C     0.0312360643    -0.0060255618    -0.0011798979
+5 H    -0.0022574747     0.0115820673    -0.0114130098
+6 O    -0.0070804717     0.0456349693     0.0187232453
+7 H    -0.0024029256     0.0009106659     0.0027901566
+8 O    -0.0558695919     0.0043267911    -0.0163619727
+9 H    -0.0040113652    -0.0071977794    -0.0088912217
+10 O     0.0886838612     0.0261211790     0.0448119594
+11 C     0.0048775834     0.0203299122    -0.0084417916
+12 H    -0.0012536347    -0.0119535495     0.0115546158
+13 C    -0.0036137674     0.0093004625     0.0192180519
+14 H     0.0091992831     0.0021936496     0.0121250118
+15 H    -0.0011755556     0.0102015412    -0.0139207741
+16 O    -0.0020947631    -0.0105297029    -0.0108660422
+17 H     0.0032276549    -0.0029695207     0.0001857686
+18 O    -0.0093371215    -0.0031516281    -0.0010857161
+19 H    -0.0021550892     0.0002157694    -0.0006458000
+----------------------------------------------
+forces:
+[[ 0.01639091 -0.01135895  0.03969075]
+ [ 0.00957638 -0.03391112 -0.0504401 ]
+ [-0.07259729 -0.02223135 -0.02650124]
+ [ 0.00065732 -0.02148784  0.000648  ]
+ [ 0.03123606 -0.00602556 -0.0011799 ]
+ [-0.00225747  0.01158207 -0.01141301]
+ [-0.00708047  0.04563497  0.01872325]
+ [-0.00240293  0.00091067  0.00279016]
+ [-0.05586959  0.00432679 -0.01636197]
+ [-0.00401137 -0.00719778 -0.00889122]
+ [ 0.08868386  0.02612118  0.04481196]
+ [ 0.00487758  0.02032991 -0.00844179]
+ [-0.00125363 -0.01195355  0.01155462]
+ [-0.00361377  0.00930046  0.01921805]
+ [ 0.00919928  0.00219365  0.01212501]
+ [-0.00117556  0.01020154 -0.01392077]
+ [-0.00209476 -0.0105297  -0.01086604]
+ [ 0.00322765 -0.00296952  0.00018577]
+ [-0.00933712 -0.00315163 -0.00108572]
+ [-0.00215509  0.00021577 -0.0006458 ]]
